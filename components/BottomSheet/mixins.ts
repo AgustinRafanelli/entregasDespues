@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     borderRadius: 0,
     backgroundColor: Colors.lightGrey,
   },
-  wrapper: {
+  container: {
     flex: 1,
     gap: 20,
   },

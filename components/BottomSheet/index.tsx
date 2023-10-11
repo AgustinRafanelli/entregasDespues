@@ -34,7 +34,7 @@ const BottomSheet = forwardRef<Ref>((props, ref) => {
       snapPoints={snapPoint}
       backdropComponent={renderBackdrop}
     >
-      <View style={styles.wrapper}>
+      <View style={styles.container}>
         <View style={styles.toggle}>
           <TouchableOpacity style={styles.toggleActive}>
             <Text style={styles.activeText}>Envios</Text>
