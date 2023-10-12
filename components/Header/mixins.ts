@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
   },
   container: {
-    height: 60,
+    height: 50,
     backgroundColor: "#fff",
     flexDirection: "row",
     gap: 20,
@@ -37,10 +37,6 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 50,
   },
-  searchContainer: {
-    height: 60,
-  },
-  searchSection: {},
   searchField: {
     paddingHorizontal: 8,
     flex: 1,

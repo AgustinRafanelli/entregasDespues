@@ -92,6 +92,7 @@ const Filter = () => {
       transform: [{ scale: scaleWeidth.value }],
     };
   });
+  
   const renderItem: ListRenderItem<Category> = ({ item, index }) => (
     <View style={styles.row}>
       <Text style={styles.itemText}>
@@ -119,6 +120,7 @@ const Filter = () => {
       />
     </View>
   );
+
   return (
     <View style={styles.container}>
       <FlatList

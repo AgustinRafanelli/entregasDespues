@@ -10,7 +10,7 @@ import styles from "./mixins";
 import { BottomSheetModal } from "@gorhom/bottom-sheet";
 
 const SearchBar = () => (
-  <View style={styles.container}>
+  <View style={[styles.container, {paddingTop: 0}]}>
     <View style={styles.searchField}>
       <Ionicons name="ios-search" size={20} color={Colors.medium} />
       <TextInput
@@ -36,6 +36,7 @@ const Header = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <BottomSheet ref={bottomSheetRef} />
+
       <View style={styles.container}>
         <TouchableOpacity onPress={openModal}>
           <Image
@@ -58,6 +59,7 @@ const Header = () => {
           <Ionicons name="person-outline" size={20} color={Colors.primary} />
         </TouchableOpacity>
       </View>
+
       <SearchBar />
     </SafeAreaView>
   );

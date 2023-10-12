@@ -27,11 +27,21 @@ export default function RootLayoutNav() {
           options={{
             presentation: "modal",
             headerTitle: "Filtro",
+            headerTitleAlign: "center",
             headerShadowVisible: false,
             headerStyle: {
               backgroundColor: Colors.lightGrey,
             },
-            headerLeft: () => (<BackButton />),
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="(modal)/Location/index"
+          options={{
+            presentation: "fullScreenModal",
+            headerTitleAlign: "center",
+            headerTitle: "Ubicacion",
+            headerLeft: () => <BackButton />,
           }}
         />
       </Stack>
