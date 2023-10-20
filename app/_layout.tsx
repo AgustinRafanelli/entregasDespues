@@ -44,6 +44,15 @@ export default function RootLayoutNav() {
             headerLeft: () => <BackButton />,
           }}
         />
+        <Stack.Screen
+          name="(page)/RestaurantDetails/index"
+          options={{
+            presentation: "fullScreenModal",
+            headerTitleAlign: "center",
+            headerTitle: "Detalles",
+            headerLeft: () => <BackButton />,
+          }}
+        />
       </Stack>
     </BottomSheetModalProvider>
   );

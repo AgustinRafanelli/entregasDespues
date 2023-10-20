@@ -9,7 +9,7 @@ import styles from "./mixins";
 const Index = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={{}}>
+      <ScrollView>
         <Categories />
         <Text style={styles.header}>Los mas pedidos en tu barrio!</Text>
         <Restaurants />
